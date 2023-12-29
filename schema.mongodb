@@ -1,0 +1,430 @@
+const currentItems = [
+    {
+        
+        name:"sunny Day Jeans",
+        price:22,
+        season_compatibility:["Summer","Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_01.jpg"),
+        type_details:{
+          fit:"normal",
+          materials:"cotton",
+          buttlift:"no"
+        }
+        
+
+      },   
+       {
+        name:"white soggy jeans",
+        price:24,
+        season_compatibility:["Summer","Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_02.jpg"),
+        type_details:{
+          fit:"loose",
+          materials:"cotton",
+          buttlift:"no"
+        }
+
+      },
+      {
+        name:"fit Jeans",
+        price:18,
+        season_compatibility:["Summer","Spring",],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_03.jpg"),
+        type_details:{
+          fit:"slim",
+          materials:"cotton",
+          buttlift:"no"
+        }
+      },      {
+        name:"kinda Chino Jeans",
+        price:30,
+        season_compatibility:["Winter","Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_04.jpg"),
+        type_details:{
+          fit:"loose",
+          materials:"poliester",
+          buttlift:"no"
+        }
+      }, 
+         {
+        name:"ripped Jeans",
+        price:55,
+        season_compatibility:["Summer","Spring"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_05.jpg"),
+        type_details:{
+          fit:"slim",
+          materials:"cotton",
+          buttlift:"no"
+        }
+      }, 
+     {
+        name:"semi Bell pants",
+        price:69,
+        season_compatibility:["Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_06.jpg"),
+        type_details:{
+          fit:"normal",
+          materials:"cotton",
+          buttlift:"no"
+        }
+        
+
+      },
+      {
+        name:"short Jeans",
+        price:60,
+        season_compatibility:["Summer","Spring"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_07.jpg"),
+        type_details:{
+          fit:"loose",
+          materials:"cotton",
+          buttlift:"no"
+        }
+      },
+      {
+        name:"white jeans",
+        price:45,
+        season_compatibility:["Summer","Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_08.jpg"),
+        type_details:{
+          fit:"normal",
+          materials:"cotton",
+          buttlift:"no"
+        }
+      },
+      {
+        name:"grey normal pants",
+        price:22,
+        season_compatibility:["Winter","Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"China",
+        sub_category:["Jeans"],
+        img_path:path.join(__dirname,"pictures/Jeans_09.jpg"),
+        type_details:{
+          fit:"normal",
+          materials:"cotton",
+          buttlift:"no"
+        }
+      },
+      {
+        name:"Loose Polar Bear Sweater",
+        price:55,
+        season_compatibility:["Winter","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_01.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"urban",
+          weight:"heavy"
+        }
+  },
+    {
+        name:"Casual Platinum Sweater",
+        price:30,
+        season_compatibility:["Winter","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        sub_category:["Sweater"],
+        img_path:path.join(__dirname,"/pictures/Sweater_02.jpg"),
+        type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"casual",
+          weight:"medium"
+
+        }
+  },
+    {
+        name:"Elegant Ventilated Sweater",
+        price:33,
+        season_compatibility:["Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_03.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"synthetic",
+          fashion:"elegant",
+          weight:"light"
+
+        }
+  },
+    {
+        name:"Loose Polar Bear Sweater",
+        price:55,
+        season_compatibility:["Winter","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        category:["Clothing"],
+        sub_category:["Sweater"],
+        img_path:path.join(__dirname,"/pictures/Sweater_04.jpg"),
+        type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"casual",
+          weight:"medium"
+        }
+  },
+   {
+        name:"Long Botton Up Sweater",
+        price:60,
+        season_compatibility:["Winter","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_04.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"normal",
+          materials:"cotton",
+          fashion:"casual",
+          weight:"light"
+
+        }
+  },
+     {
+        name:"Cropped Comfy Sweater",
+        price:40,
+        season_compatibility:["Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_05.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"urban",
+          weight:"light"
+
+        }
+  },   {
+        name:"High Neck Elegant Sweater",
+        price:79,
+        season_compatibility:["Spring","Fall","Winter"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_06.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"slim",
+          materials:"cotton",
+          fashion:"elegant",
+          weight:"medium"
+
+        }
+  },
+     {
+        name:"Dress Sweater",
+        price:55,
+        season_compatibility:["Spring"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_07.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"normal",
+          materials:"tulle",
+          fashion:"casual",
+          weight:"light"
+
+        }
+  },
+  
+     {
+        name:"Grandma's Sweater",
+        price:65,
+        season_compatibility:["Spring","Fall," ,"Winter"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_08.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"casual",
+          weight:"medium"
+
+        }
+  },
+     {
+        name:"Long Sleeve",
+        price:45,
+        season_compatibility:["Spring"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_09.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"normal",
+          materials:"Tulle",
+          fashion:"casual",
+          weight:"light"
+
+        },
+        
+     }
+      ,  
+     {
+        name:"Bottoned Up Elegant Sweater",
+        price:75,
+        season_compatibility:["Fall","Winter"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_10.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"elegant",
+          weight:"medium"
+
+        }
+  },
+  
+     {
+        name:"Pink Hoodie",
+        price:35,
+        season_compatibility:["Fall","Winter"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_11.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"normal",
+          materials:"cotton",
+          fashion:"urban",
+          weight:"medium"
+        },
+    
+     },
+     {
+        name:"Loose Rugged Sweater",
+        price:24,
+        season_compatibility:["Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_12.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"casual",
+          weight:"light"
+
+        }
+  
+  }
+  ,
+  
+     {
+        name:"Loose Casual Sweater",
+        price:70,
+        season_compatibility:["Summer","Spring"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_13.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"normal",
+          materials:"silk",
+          fashion:"casual",
+          weight:"light"
+
+        }
+  },
+  
+     {
+        name:"Light Pink Hoodie",
+        price:15,
+        season_compatibility:["Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_14.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"slim",
+          materials:"cotton",
+          fashion:"urban",
+          weight:"light"
+
+        }
+  },
+  
+     {
+        name:"Oveized Styled Sweater",
+        price:39,
+        season_compatibility:["Spring","Fall"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_15.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"urban",
+          weight:"light"
+
+        }
+  },
+  
+     {
+        name:"Mom's Sweater",
+        price:66,
+        season_compatibility:["Fall","Winter"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_16.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"casual",
+          weight:"heavy"
+
+        }
+  },
+  
+     {
+        name:"Showbiz Sweater",
+        price:115,
+        season_compatibility:["Fall","Spring"],
+        category:["Clothing"],
+        manufacturer:"Bangladesh",
+        img_path:path.join(__dirname,"/pictures/Sweater_17.jpg"),
+        sub_category:["Sweater"],
+         type_details:{
+          fit:"loose",
+          materials:"cotton",
+          fashion:"elegant",
+          weight:"medium"
+
+        }
+  }
+]
