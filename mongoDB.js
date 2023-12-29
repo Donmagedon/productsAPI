@@ -27,7 +27,7 @@ function addToDB(){
 }
 async function connectDB(){
 try{
-    await mongoose.connect(`mongodb+srv://donmagedon7:$${process.env.MONGODB_PASSWORD}@cluster0.lnwbnuf.mongodb.net/?retryWrites=true&w=majority`,{dbName:"EcommerceShop"}).then((data)=>{
+    await mongoose.connect(`mongodb+srv://donmagedon7:${process.env.MONGODB_PASSWORD}@cluster0.lnwbnuf.mongodb.net/?retryWrites=true&w=majority`,{dbName:"EcommerceShop"}).then((data)=>{
  
 
 }).catch((err)=>{
